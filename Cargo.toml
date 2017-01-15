@@ -6,6 +6,7 @@ authors = ["yami <mingzai.ym@alibaba-inc.com>"]
 [dependencies]
 rss = { path = "rss" }
 
+error-chain = "0.7.2"
 chrono = "0.2"
 reqwest = "0.2.0"
 lettre = "0.6"
