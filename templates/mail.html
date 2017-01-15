@@ -1,0 +1,30 @@
+<html>
+  <body>
+    <style type="text/css">
+      .tg  {border-spacing:1;border-color:#bbb;}
+      .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#bbb;color:#594F4F;background-color:#E0FFEB;}
+      .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#bbb;color:#493F3F;background-color:#9DE0AD;}
+      .tg .tg-yw4l{vertical-align:top}
+    </style>
+    
+    <table class="tg" border="1">
+      <tr>
+        <th class="tg-yw4l">标题</th>
+        <th class="tg-yw4l">作者</th>
+        <th class="tg-yw4l">时间</th>
+        <th class="tg-yw4l">链接</th>
+        <th class="tg-yw4l">内容</th>
+      </tr>
+      {% for item in items %}
+      <tr>
+        <td class="tg-yw4l">{{item.title}}</td>
+        <td class="tg-yw4l">{{item.author}}</td>
+        <td class="tg-yw4l">{{item.pub_date}}</td>
+        <td class="tg-yw4l">{{item.link}}</td>
+        <td class="tg-yw4l">{{item.description}}</td>
+      </tr>      
+      {% endfor %}
+    </table>
+    
+  </body>
+</html>

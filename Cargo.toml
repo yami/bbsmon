@@ -1,0 +1,15 @@
+[package]
+name = "bbsmon"
+version = "0.1.0"
+authors = ["yami <mingzai.ym@alibaba-inc.com>"]
+
+[dependencies]
+rss = { path = "rss" }
+
+chrono = "0.2"
+reqwest = "0.2.0"
+lettre = "0.6"
+tera = "0.6"
+serde = "0.8"
+serde_derive = "0.8"
+serde_json = "0.8"
